@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Safe2choose">
+    <meta name="description" content="We are the best at market selling abortion pills">
+    <meta name="keywords" content="pills, abortions,chat,safe2choose">
+    <meta name="robots" content="index, follow">
+    <title>safe2choose</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script type="text/javascript" src="resources/js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container wrapper">
+    <div id="top">
+       <h1>Hi!. Welcome to a Safe2choose</h1>
+	   <p>Here you can find the abortion pills that you are searching...</p>
+    </div>
+    <div class="wrapper">
+        <div id="main">
+              <h4>
+                 Hello, welcome to the safe2choose chat, let me introduce myself, I'm Stella, your safe2choose bot counselor. First of all are you...?
+              </h4>
+              <select name="gender" id="general-1" class="select">
+                <option value="">Selecciona una opción</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            <div class="novisible view-general-1">
+                <h4>
+                    The more information I have, the more I can help you. Don't worry, everything you answer here is confidential. How old are you?
+                </h4>
+                <select name="younger" id="general-2" class="select">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Younger than 15">Younger than 15</option>
+                    <option value="15-20">15-20</option>
+                    <option value="21-26">21-26</option>
+                    <option value="27-32">27-32</option>
+                    <option value="33-38">33-38</option>
+                    <option value="">39-43</option>
+                    <option value="43+">more than 43</option>
+                </select>
+            </div>
+             <div class="novisible view-general-2">
+                  <h4>How did you know about safe2choose?</h4>
+                  <select name="knowabout" id="general-3" class="select">
+                  <option value="">Selecciona una opción</option>
+                    <option value="A friend/ a member of my family">A friend/ a member of my family</option>
+                    <option value="By Social Media">By Social Media</option>
+                    <option value="Searching on the Internet/Google">Searching on the Internet/Google</option>
+                    <option value="Because a press release/news">Because a press release/news</option>
+                  </select>
+            </div>
+            <div class="novisible view-general-3">
+               <h4>OK dear, my questions are done, now is your turn. How can I help you?</h4>
+                <input type="radio"  class="pills" name="pills-general" id="general-3-1" value="friend">I want to purchase the abortion pills
+                <input type="radio" class="pills" name="pills-general" id="general-3-2" value="member"> Are they safe?
+                <input type="radio" class="pills" name="pills-general" id="general-3-3" value="partner">Are they legal? 
+               <div class="novisible pills-general view-general-3-1">
+                   <p>Are the pills for you or for someone else?</p>
+                    <input type="radio"  class="pills" name="pills-for" id="for-1" value="forme">For me
+                    <input type="radio" class="pills" name="pills-for" id="for-2" value="someoneelse">someone else
+                    <div id="view-for-1" class="novisible pills-for view-for-1">
+                        How many weeks of pregnancy do you have?<br/>
+                         
+                        <input type="radio"  class="pills" name="pills-weeks" id="weeks-1" value="10less">10 weeks or less
+                        <input type="radio" class="pills" name="pills-weeks" id="weeks-2" value="11-12"> 11-12 weeks
+                        <input type="radio" class="pills" name="pills-weeks" id="weeks-3" value="12more"> 12 weeks or more
+                        
+                        <div id="view-weeks-1" class="novisible pills-weeks view-weeks-1">
+                        You are still on time to use safely the abortion pills. You can order them in this website. First, please check if we have distribution available in your country.
+                        </div>
+                        <div id="view-weeks-2" class="novisible pills-weeks view-weeks-2">
+                           Is risky to have an abortion with pills at this time. Please contact as soon as possible one of our human counselors to review if you still can consider this option.
+                         </div>
+                        <div id="view-weeks-3" class="novisible pills-weeks view-weeks-3">
+                          It is not recommendable for you to have an abortion with pills. At this time is dangerous for your health. You can explore other options. If you need advice with this, please contact one of our human counselors to review your case.
+                        </div>
+                    </div>
+                    <div id="view-for-2" class="novisible pills-for view-for-2">
+                        How is this person related with you?<br/>
+                        <input type="radio"  class="pills" name="pills-related" id="related-1" value="friend">She's my friend
+                        <input type="radio" class="pills" name="pills-related" id="related-2" value="member">She's a member of my family
+                        <input type="radio" class="pills" name="pills-related" id="related-3" value="partner">She's my partner 
+                        <div id="view-related-1" class="novisible pills-related view-related-1 view-related-2 view-related-3">
+                        Before ordering the pills, it will be recommended that she speak with one of our human counselors. She must have the last word. Please contact with them as soon as possible. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="novisible pills-general view-general-3-2">
+                <p>
+                    Abortion pills are safe if you are in general good health, no more than 10 weeks pregnant and not allergic to the medicines.
+                </p> 
+            </div>   
+            <div class="novisible pills-general view-general-3-3">
+                Each country has different legislation about abortion and abortion methods. You must know anyway, that a safe abortion is a right for all women recognized by WHO. We'll do as soon as we can to help you, no matter where you are =)
+            </div>
+        </div> <!-- end main-->
+    </div>
+    <div id="sidebar">
+      <h3>Instructions</h3>
+      <p>
+    	Please, answer the cuestions with your personal information. All the data is confidential. For more information call to 961 366 3565. Good luck 
+      </p>
+    </div>
+</div>  
+  
+  <footer></footer>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.select').change(function(){$('.view-'+$(this).attr('id')).addClass('visible');});
+        $('.pills').click(function(){$('.'+$(this).attr('name')).removeClass('visible'); $('.view-'+$(this).attr('id')).addClass('visible');});
+    });
+</script>
+</body>
+</html>
+
